@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>斗地主 · 资料辑录与信息索引</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f7f5f0;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', sans-serif;
+            color: #2d2a24;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+
+        .page {
+            max-width: 740px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            box-shadow: 0 1px 8px rgba(0,0,0,0.03);
+            border-radius: 32px;
+            padding: 3rem 2rem 2.5rem;
+        }
+
+        /* hero 区域 — 杂志横幅 */
+        .hero {
+            margin-bottom: 3.2rem;
+            border-bottom: 1px solid #edeae2;
+            padding-bottom: 2.4rem;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 400;
+            letter-spacing: -0.02em;
+            color: #1a1712;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            font-weight: 600;
+            color: #b15c2e;
+        }
+
+        .hero .subtitle {
+            font-size: 1rem;
+            color: #7a7368;
+            background: #f0ede6;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+            border-radius: 40px;
+            margin-top: 0.3rem;
+        }
+
+        .hero .meta-line {
+            margin-top: 1.6rem;
+            font-size: 0.9rem;
+            color: #9c9589;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .hero .meta-line i {
+            font-style: normal;
+            background: #e8e3da;
+            padding: 0 0.6rem;
+            border-radius: 12px;
+        }
+
+        /* 正文窄列 */
+        .content {
+            max-width: 640px;
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            font-weight: 550;
+            color: #2d2a24;
+            margin: 2.4rem 0 0.8rem;
+            padding-left: 0.5rem;
+            border-left: 4px solid #b15c2e;
+        }
+
+        .section-title:first-of-type {
+            margin-top: 0.2rem;
+        }
+
+        p {
+            margin-bottom: 1.4rem;
+            font-size: 1rem;
+            color: #302c26;
+        }
+
+        .intro-highlight {
+            background: #f9f6f0;
+            padding: 1rem 1.4rem;
+            border-radius: 20px;
+            margin: 1.6rem 0 1.8rem;
+            border: 1px solid #e7e2d8;
+        }
+
+        .intro-highlight p {
+            margin-bottom: 0.2rem;
+        }
+
+        .faq-mini {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem 1.6rem;
+            margin: 1.8rem 0 2.2rem;
+            background: #f4f1eb;
+            padding: 1.2rem 1.5rem;
+            border-radius: 24px;
+        }
+
+        .faq-item {
+            font-size: 0.95rem;
+        }
+
+        .faq-item strong {
+            display: block;
+            font-weight: 600;
+            color: #3f392f;
+            margin-bottom: 0.1rem;
+        }
+
+        .faq-item span {
+            color: #5b5549;
+        }
+
+        .link-card {
+            background: #efebe4;
+            padding: 1.2rem 1.6rem;
+            border-radius: 28px;
+            margin: 2.2rem 0 0.8rem;
+            transition: background 0.2s;
+        }
+
+        .link-card:hover {
+            background: #e6e0d6;
+        }
+
+        .link-card a {
+            color: #1a1712;
+            text-decoration: none;
+            font-weight: 550;
+            border-bottom: 1px solid #b15c2e;
+            padding-bottom: 1px;
+        }
+
+        .link-card a:hover {
+            border-bottom-width: 2px;
+        }
+
+        .link-card .hint {
+            font-size: 0.9rem;
+            color: #6f685d;
+            margin-top: 0.4rem;
+        }
+
+        .footer-note {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e5dfd6;
+            font-size: 0.9rem;
+            color: #726b5f;
+            text-align: center;
+        }
+
+        .footer-note a {
+            color: #4a4337;
+            text-decoration: none;
+            border-bottom: 1px dotted #b6ad9d;
+        }
+
+        @media (max-width: 500px) {
+            .page {
+                padding: 1.8rem 1rem 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .faq-mini {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page">
+    <!-- 杂志横幅 -->
+    <div class="hero">
+        <h1>资料簿 · <span>斗地主</span></h1>
+        <div class="subtitle">纸牌逻辑 · 民间索引</div>
+        <div class="meta-line">
+            <span>整理方向 / 规则流变 · 牌型术语 · 版本拾遗</span>
+            <span><i>信息密度</i> 中等</span>
+        </div>
+    </div>
+
+    <div class="content">
+        <!-- 背景说明：从资料整理切入 -->
+        <p>
+            纸牌游戏里，<a href="https://main-doudizhu.com">斗地主</a>大概是民间资料最零散也最鲜活的一类。
+            早年流传于街头棋牌室的口诀、地方变种规则、甚至记牌习惯，大多靠玩家之间口耳承接，很少被系统梳理。
+            这个专题希望从信息索引的角度，把那些藏在牌桌角落里的规则演变、牌型称谓和战术笔记重新归档。
+        </p>
+
+        <div class="intro-highlight">
+            <p>一篇专题无法覆盖所有版本，但可以成为一条线索。</p>
+        </div>
+
+        <!-- 三段自然介绍：规则脉络、术语、玩法场景 -->
+        <h2 class="section-title">规则脉络 · 三人的博弈框架</h2>
+        <p>
+            斗地主最基础的设定是三位玩家、一副牌（包含大小王），以及“地主”与“农民”的对立目标。
+            但不同地区的规则在叫分方式、连对长度、是否允许三带一等细节上常有分歧。
+            例如南方一些牌局允许“三带一对”，而北方不少地方坚持“三带单张”更纯粹。
+            这些看似微小的差异，其实影响了整局牌的攻防节奏。
+        </p>
+
+        <h2 class="section-title">牌型称谓 · 从“炸弹”到“春天”</h2>
+        <p>
+            牌型的命名本身就像一部民间词典：四张相同点数的牌叫“炸弹”，双王组合是“王炸”，一轮出完所有手牌且对方未出牌称为“春天”或“反春”。
+            部分老玩家还会用“飞机”、“三顺”、“姊妹对”来形容连续牌组。
+            这些称谓并非官方制定，而是在一次次牌局中自然沉淀下来的共识，值得作为语言资料收集。
+        </p>
+
+        <h2 class="section-title">玩法场景 · 从线下到数字界面</h2>
+        <p>
+            过去斗地主多在熟人聚会、茶馆或长途火车上发生，记牌靠脑子，算牌靠经验。
+            如今移动端平台让更多人能随时凑局，但线上版本往往简化了部分地方规则，也让一些传统术语逐渐淡出。
+            保留原汁原味的规则记录，反而成了某种整理责任。
+            更多关于基本玩法与版本差异的内容，可以在 <a href="https://main-doudizhu.com">斗地主</a> 的资料页中找到对照。
+        </p>
+
+        <!-- FAQ 摘要 — 缩略问答式信息条目 -->
+        <div class="faq-mini">
+            <div class="faq-item">
+                <strong>为什么叫“地主”？</strong>
+                <span>早期牌局中叫分最高者获得额外三张底牌，类似“地主”收租，农民联合对抗。</span>
+            </div>
+            <div class="faq-item">
+                <strong>炸弹可以拆吗？</strong>
+                <span>常规规则不允许拆炸弹，但在一些民间变体中，炸弹可拆作普通对子或单张使用。</span>
+            </div>
+            <div class="faq-item">
+                <strong>“癞子”是什么？</strong>
+                <span>部分玩法指定某张牌为万能牌，称为癞子，可替代任何牌组成牌型。</span>
+            </div>
+            <div class="faq-item">
+                <strong>记牌是必须的吗？</strong>
+                <span>非强制，但高水平玩家通常会记忆已出的大牌（王、2、A）和关键牌张分布。</span>
+            </div>
+        </div>
+
+        <!-- 卡片式索引提示，链接自然嵌入句子 -->
+        <div class="link-card">
+            <p>如果你想查阅更完整的规则文档、牌型列表及各地变体记录，可以前往 <a href="https://main-doudizhu.com">斗地主</a> 索引专页。</p>
+            <div class="hint">该页面持续收录玩家投稿的规则备忘与术语笔记。</div>
+        </div>
+
+        <!-- 页尾访问提示 — 保持杂志语气 -->
+        <div class="footer-note">
+            <span>资料专题 · 不定期更新</span><br>
+            <span style="font-size:0.85rem;">页面内容基于公开资料与玩家社群记录整理。</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
